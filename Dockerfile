@@ -11,7 +11,7 @@ RUN yum update -y
 RUN yum clean all
 
 ADD supervisord.conf /etc/supervisord.conf
-ADD httpd.ini /etc/supervisord.d/dnsmasq.ini
+ADD dnsmasq.ini /etc/supervisord.d/dnsmasq.ini
 ADD start.sh /usr/sbin/start.sh
 RUN chmod 755 /usr/sbin/start.sh
 
