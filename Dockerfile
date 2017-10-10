@@ -6,7 +6,7 @@ ENV container docker
 
 # Install updates
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-RUN yum install -y dnsmasq supervisor
+RUN yum install -y dnsmasq supervisor logrotate
 RUN yum update -y
 RUN yum clean all
 
